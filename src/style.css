@@ -1,0 +1,254 @@
+/* Swiper CSS - Los @import deben ir primero */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-fade';
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados para el Banner */
+.banner-swiper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative !important;
+}
+
+@media (min-width: 640px) {
+  .banner-swiper {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-swiper {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-swiper {
+    height: 700px;
+  }
+}
+
+.banner-swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.banner-swiper .swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.banner-swiper .swiper-slide > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* Botones de navegación del carrusel */
+.banner-swiper .swiper-button-next,
+.banner-swiper .swiper-button-prev {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  z-index: 30 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: absolute !important;
+}
+
+.banner-swiper .swiper-button-next {
+  right: 20px !important;
+  left: auto !important;
+}
+
+.banner-swiper .swiper-button-prev {
+  left: 20px !important;
+  right: auto !important;
+}
+
+.banner-swiper .swiper-button-next:hover,
+.banner-swiper .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+.banner-swiper .swiper-button-next::after,
+.banner-swiper .swiper-button-prev::after {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.banner-swiper .swiper-button-disabled {
+  opacity: 0.35 !important;
+  cursor: auto !important;
+  pointer-events: none !important;
+}
+
+.banner-swiper .swiper-pagination {
+  bottom: 20px !important;
+}
+
+.banner-swiper .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.banner-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+  width: 24px;
+  border-radius: 6px;
+}
+
+/* Asegurar que las imágenes se muestren correctamente */
+.banner-swiper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Estilos para el carrusel de imágenes */
+.image-carousel {
+  width: 100%;
+  padding: 20px 0 60px 0;
+}
+
+.image-carousel .swiper-button-next,
+.image-carousel .swiper-button-prev {
+  color: #986675 !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+  z-index: 10 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.image-carousel .swiper-button-next {
+  right: 10px !important;
+}
+
+.image-carousel .swiper-button-prev {
+  left: 10px !important;
+}
+
+.image-carousel .swiper-button-next:hover,
+.image-carousel .swiper-button-prev:hover {
+  background: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+.image-carousel .swiper-button-next::after,
+.image-carousel .swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.image-carousel .swiper-pagination {
+  bottom: 20px !important;
+}
+
+.image-carousel .swiper-pagination-bullet {
+  background: #986675 !important;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.image-carousel .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #986675 !important;
+  width: 30px;
+  border-radius: 5px;
+}
+
+/* Estilos para el carrusel móvil de Servicios */
+.servicios-carousel-mobile {
+  padding: 20px 0 60px 0;
+}
+
+.servicios-carousel-mobile .swiper-button-next,
+.servicios-carousel-mobile .swiper-button-prev {
+  color: #986675 !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+  z-index: 10 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.servicios-carousel-mobile .swiper-button-next {
+  right: 5px !important;
+}
+
+.servicios-carousel-mobile .swiper-button-prev {
+  left: 5px !important;
+}
+
+.servicios-carousel-mobile .swiper-button-next:hover,
+.servicios-carousel-mobile .swiper-button-prev:hover {
+  background: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+.servicios-carousel-mobile .swiper-button-next::after,
+.servicios-carousel-mobile .swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.servicios-carousel-mobile .swiper-pagination {
+  bottom: 20px !important;
+}
+
+.servicios-carousel-mobile .swiper-pagination-bullet {
+  background: #986675 !important;
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.servicios-carousel-mobile .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #986675 !important;
+  width: 24px;
+  border-radius: 4px;
+}
