@@ -16,7 +16,7 @@ function Header() {
       className="sticky top-0 z-50 shadow-md"
       style={{ backgroundColor: '#986675' }}
     >
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container px-4 py-4 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
@@ -28,51 +28,51 @@ function Header() {
           </div>
 
           {/* Menú Desktop */}
-          <ul className="hidden lg:flex items-center space-x-6">
+          <ul className="items-center hidden space-x-6 lg:flex">
             <li>
               <a
-                href="#"
-                className="text-white hover:text-gray-200 transition-colors font-medium text-sm md:text-base"
+                href="#home"
+                className="text-sm font-medium text-white transition-colors hover:text-gray-200 md:text-base"
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="text-white hover:text-gray-200 transition-colors font-medium text-sm md:text-base"
+                href="#nosotros"
+                className="text-sm font-medium text-white transition-colors hover:text-gray-200 md:text-base"
               >
                 Nosotros
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="text-white hover:text-gray-200 transition-colors font-medium text-sm md:text-base"
+                href="#servicios"
+                className="text-sm font-medium text-white transition-colors hover:text-gray-200 md:text-base"
               >
                 Servicios
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="text-white hover:text-gray-200 transition-colors font-medium text-sm md:text-base"
+                href="#ultimos-proyectos"
+                className="text-sm font-medium text-white transition-colors hover:text-gray-200 md:text-base"
               >
                 Últimos proyectos
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="text-white hover:text-gray-200 transition-colors font-medium text-sm md:text-base"
+                href="#clientes"
+                className="text-sm font-medium text-white transition-colors hover:text-gray-200 md:text-base"
               >
                 Clientes
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="text-white hover:text-gray-200 transition-colors font-medium text-sm md:text-base"
+                href="#contactanos"
+                className="text-sm font-medium text-white transition-colors hover:text-gray-200 md:text-base"
               >
                 Contáctanos
               </a>
@@ -82,7 +82,7 @@ function Header() {
           {/* Botón Menú Mobile */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden text-white focus:outline-none"
+            className="text-white lg:hidden focus:outline-none"
             aria-label="Toggle menu"
           >
             <svg
@@ -112,58 +112,58 @@ function Header() {
 
         {/* Menú Mobile */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4">
+          <div className="pb-4 mt-4 lg:hidden">
             <ul className="flex flex-col space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   onClick={closeMenu}
-                  className="block text-white hover:text-gray-200 transition-colors font-medium text-base py-2"
+                  className="block py-2 text-base font-medium text-white transition-colors hover:text-gray-200"
                 >
                   Home
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#nosotros"
                   onClick={closeMenu}
-                  className="block text-white hover:text-gray-200 transition-colors font-medium text-base py-2"
+                  className="block py-2 text-base font-medium text-white transition-colors hover:text-gray-200"
                 >
                   Nosotros
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#servicios"
                   onClick={closeMenu}
-                  className="block text-white hover:text-gray-200 transition-colors font-medium text-base py-2"
+                  className="block py-2 text-base font-medium text-white transition-colors hover:text-gray-200"
                 >
                   Servicios
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#ultimos-proyectos"
                   onClick={closeMenu}
-                  className="block text-white hover:text-gray-200 transition-colors font-medium text-base py-2"
+                  className="block py-2 text-base font-medium text-white transition-colors hover:text-gray-200"
                 >
                   Últimos proyectos
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#clientes"
                   onClick={closeMenu}
-                  className="block text-white hover:text-gray-200 transition-colors font-medium text-base py-2"
+                  className="block py-2 text-base font-medium text-white transition-colors hover:text-gray-200"
                 >
                   Clientes
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contactanos"
                   onClick={closeMenu}
-                  className="block text-white hover:text-gray-200 transition-colors font-medium text-base py-2"
+                  className="block py-2 text-base font-medium text-white transition-colors hover:text-gray-200"
                 >
                   Contáctanos
                 </a>

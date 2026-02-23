@@ -15,7 +15,7 @@ function UltimosProyectos() {
   ]
 
   return (
-    <section className="w-full py-16 bg-white">
+    <section id="ultimos-proyectos" className="w-full py-16 bg-white">
       <div className="container px-4 mx-auto max-w-7xl">
         <h2 className="py-5 mb-12 text-5xl font-bold text-center lg:py-20 md:text-6xl" style={{ color: '#986675' }}>
           ÚLTIMOS PROYECTOS 

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import Modal from './Modal'
+import ImageWithLoader from './ImageWithLoader'
 
 function Servicios() {
   const [selectedService, setSelectedService] = useState<number | null>(null)
@@ -14,7 +15,7 @@ function Servicios() {
       content: (
         <div className="flex flex-col gap-4 md:flex-row md:gap-6">
           <div className="w-full md:w-1/2">
-            <img
+            <ImageWithLoader
               src="/images/estrategia.png"
               alt="Estrategia"
               className="w-full h-auto rounded-lg"
@@ -35,7 +36,7 @@ function Servicios() {
       content: (
         <div className="flex flex-col gap-4 md:flex-row md:gap-6">
           <div className="w-full md:w-1/2">
-            <img
+            <ImageWithLoader
               src="/images/creatividad.png"
               alt="Creatividad"
               className="w-full h-auto rounded-lg"
@@ -56,7 +57,7 @@ function Servicios() {
       content: (
         <div className="flex flex-col gap-4 md:flex-row md:gap-6">
           <div className="w-full md:w-1/2">
-            <img
+            <ImageWithLoader
               src="/images/medios.png"
               alt="Medios"
               className="w-full h-auto rounded-lg"
@@ -77,7 +78,7 @@ function Servicios() {
       content: (
         <div className="flex flex-col gap-4 md:flex-row md:gap-6">
           <div className="w-full md:w-1/2">
-            <img
+            <ImageWithLoader
               src="/images/produccion.png"
               alt="Producción"
               className="w-full h-auto rounded-lg"
@@ -105,7 +106,7 @@ function Servicios() {
 
   return (
     <>
-      <section className="w-full py-8 bg-white sm:py-12 md:py-16">
+      <section id="servicios" className="w-full py-8 bg-white sm:py-12 md:py-16">
         <div className="container px-4 mx-auto">
           <h2 className="mb-8 text-4xl font-bold text-center lg:py-8 sm:text-5xl md:text-6xl sm:py-12 md:py-20 sm:mb-10 md:mb-12" style={{ color: '#986675' }}>
             SERVICIOS

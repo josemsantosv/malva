@@ -21,7 +21,7 @@ function Contactanos() {
   ]
 
   return (
-    <section className="w-full py-10 bg-white lg:py-20 lg:pb-40">
+    <section id="contactanos" className="w-full py-10 bg-white lg:py-20 lg:pb-40">
       <div className="container px-4 mx-auto">
         <h2 className="mb-12 text-5xl font-bold text-center md:text-6xl lg:py-20" style={{ color: '#986675' }}>
           CONTÁCTANOS

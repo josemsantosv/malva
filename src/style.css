@@ -9,6 +9,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Scroll suave para navegación */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Estilos personalizados para el Banner */
 .banner-swiper {
   width: 100%;

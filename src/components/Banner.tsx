@@ -26,7 +26,7 @@ function Banner() {
   ]
 
   return (
-    <section className="relative w-full">
+    <section id="home" className="relative w-full">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}

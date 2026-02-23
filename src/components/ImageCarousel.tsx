@@ -41,7 +41,7 @@ function ImageCarousel() {
   ]
 
   return (
-    <section className="w-full py-8 bg-white sm:py-12 md:py-16">
+    <section id="nosotros" className="w-full py-8 bg-white sm:py-12 md:py-16">
       <h2 className="py-10 text-5xl font-bold text-center md:text-6xl" style={{ color: '#986675' }}>NOSOTROS</h2>
       <div className="container px-4 mx-auto">
         <Swiper
