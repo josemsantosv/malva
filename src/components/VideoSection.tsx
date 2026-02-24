@@ -2,27 +2,18 @@ function VideoSection() {
   return (
     <section className="w-full py-16 bg-gray-100">
   <div className="py-10">
-  <h2 className="text-6xl font-extrabold text-black text-center">¡LE PONEMOS COLOR A LAS IDEAS!</h2>
+  <h2 className="text-6xl font-extrabold text-center text-black">¡LE PONEMOS COLOR A LAS IDEAS!</h2>
   </div>
-      <div className="max-w-5xl mx-auto px-4 mt-10">
-        <div className="relative w-full aspect-video bg-gray-300 rounded-lg overflow-hidden flex items-center justify-center">
-          <div className="text-center">
-            <p className="text-4xl font-bold text-gray-500">VIDEO</p>
-            <p className="text-gray-400 mt-2"></p>
-          </div>
-          {/* Aquí se puede agregar el video más adelante */}
-          {/* 
-          <video 
-            className="w-full h-full object-cover"
-            controls
-            autoPlay
-            muted
-            loop
-          >
-            <source src="/videos/video.mp4" type="video/mp4" />
-            Tu navegador no soporta el elemento de video.
-          </video>
-          */}
+      <div className="max-w-5xl px-4 mx-auto mt-10">
+        <div className="relative w-full overflow-hidden bg-gray-300 rounded-lg aspect-video">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/xqHy5PQOqq0?si=8BC7fidWad9OcmQC"
+            title="Video de Malva"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>

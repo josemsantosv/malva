@@ -32,13 +32,13 @@ function Modal({ isOpen, onClose, title, children }: ModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="sticky top-0 bg-white border-b border-gray-200 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold pr-2" style={{ color: '#986675' }}>
+        <div className="sticky top-0 flex items-center justify-between px-4 py-3 bg-white border-b border-gray-200 sm:px-6 sm:py-4">
+          <h2 className="pr-2 text-xl font-bold sm:text-2xl md:text-3xl" style={{ color: '#986675' }}>
             {title}
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 text-2xl sm:text-3xl font-bold transition-colors flex-shrink-0"
+            className="flex-shrink-0 text-2xl font-bold text-gray-500 transition-colors hover:text-gray-700 sm:text-3xl"
             aria-label="Cerrar modal"
           >
             ×

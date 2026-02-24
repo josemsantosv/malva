@@ -30,7 +30,7 @@ function ImageWithLoader({ src, alt, className = '' }: ImageWithLoaderProps) {
         </div>
       )}
       {hasError ? (
-        <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+        <div className="flex items-center justify-center w-full h-64 bg-gray-200 rounded-lg">
           <p className="text-gray-500">Error al cargar la imagen</p>
         </div>
       ) : (
